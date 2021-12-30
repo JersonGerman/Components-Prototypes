@@ -1,0 +1,59 @@
+.card{
+    margin: 2rem auto;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px #090909;
+    display: inline-flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    background-color: white;
+}
+
+.card h3{
+    align-self: center;
+}
+
+.card .card-img{
+    align-self: center;
+    margin-bottom: .5rem;
+}
+.card .card-img img{
+    border-radius: 50%;
+    align-self: center;
+}
+
+.card div{
+    padding: 0 2rem;
+}
+
+.card button{
+    border: none;
+    align-self: center;
+    background-color: transparent;
+}
+
+.card div i{
+    margin-top: .5rem;
+    margin-right: 1rem;
+
+}
+
+.card i.fa-random{
+    align-self: center;
+    margin:1rem;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s all ease-in-out;
+}
+.card i.fa-random:hover{
+    cursor: pointer;
+    box-shadow: 4px 4px 4px #ccc;
+    transform: scale(1.2);
+}
