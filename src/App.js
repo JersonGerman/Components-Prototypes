@@ -38,12 +38,16 @@ function App() {
     )
   }
 
+  const handleComponent = (component)=>{
+    setComponent(component);
+  }
+
 
   return (
     <div className="App" >
       <button onClick={()=>setPrototypes(!prototypes)}>{prototypes?'Change to Exercises':'Change to Prototypes'}</button>
 
-      {prototypes?<ComponentsPrototypes/>:<CardApi/>}
+      {prototypes?<ComponentsPrototypes/>:<CardApi handleComponent={handleComponent} component={component}/>}
       
       {component}
     </div>

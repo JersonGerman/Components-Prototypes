@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import getNumber from "../../util/Funciones";
 
 
-const CardApi = () => {    
-    const [component, setComponent] = useState(<></>);
+const CardApi = (props) => {    
+    const {handleComponent, component} = props;
 
     const Users = ()=>{
         const [user,setUser] = useState('');
@@ -64,12 +64,12 @@ const CardApi = () => {
       <div>
         <h3>Ejercicios</h3>
         <div>
-          <button onClick={()=>setComponent(<Users/>)}>users</button>
-          <button onClick={()=>setComponent(<Post/>)}>post</button>
-          <button onClick={()=>setComponent(<ToDo/>)}>To Do´s</button>
+          <button onClick={()=>handleComponent(<Users/>)}>users</button>
+          <button onClick={()=>handleComponent(<Post/>)}>post</button>
+          <button onClick={()=>handleComponent(<ToDo/>)}>To Do´s</button>
         </div>
         <div>
-            {component}
+            {}
         </div>
       </div>
     )
