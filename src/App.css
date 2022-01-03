@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+
+  transition: .3s all ease-in-out;
 }
 
+button{
+  /* background-color: #ccc;
+  color: black; */
+}
 
