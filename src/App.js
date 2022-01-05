@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { useState, useEffect } from 'react';
 import './App.css';
 import Counter from './components/Counter';
@@ -47,7 +46,7 @@ function App() {
     <div className="App" >
       <button onClick={()=>setPrototypes(!prototypes)}>{prototypes?'Change to Exercises':'Change to Prototypes'}</button>
 
-      {prototypes?<ComponentsPrototypes/>:<CardApi handleComponent={handleComponent} component={component}/>}
+      {prototypes?<ComponentsPrototypes/>:<CardApi handleComponent={handleComponent}/>}
       
       {component}
     </div>
